@@ -173,7 +173,7 @@ html {
 }
 
 .navbar-inverse .navbar-header a {
-    font-family: Snell Roundhand, cursive;
+    font-family: "Trirong", serif;
     font-size: 40px;
 }
 
@@ -184,6 +184,12 @@ html {
     padding: 0px;
     margin: 0px;
     font-size: 40px;
+}
+
+.section-list-description p {
+  padding: 10px;
+  margin: 0px;
+  text-align: left !important;
 }
 
 .section-with-list {
