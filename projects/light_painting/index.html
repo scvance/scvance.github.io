@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>AI Light Painting Robot</title>
+    <meta charset='UTF-8'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel='stylesheet' href='../styles.css'/> -->
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  
+  <body>
+    
+    <div id="navbar"></div>
+
+    <h1 class='main-title'>AI LIGHT PAINTING ROBOT</h1>
+    
+    <div class='page-body'>
+        <div id='ai-light-painting' class='project-section'>
+              <div class='section-with-list'>
+                <div class='section-list-description'>
+                  <h2>PROJECT OVERVIEW</h2>
+                  <p>This project involves an AI-powered robot that creates stunning light paintings by moving a light source in a controlled pattern. The robot's movements are pre-programmed using AI algorithms to produce intricate and artistic light patterns.</p>
+                </div>
+                
+                <hr class='section-list-line'>
+                
+                <!-- Video Section -->
+                <div class='list-section'>
+                  <div class='list-description'>
+                    <h2>Project Videos</h2>
+                    <p>Watch the AI light painting robot in action:</p>
+                    <video class='list-video' controls>
+                      <source src='videos/ai_light_painting.mp4' type='video/mp4'>
+                      Your browser does not support the video tag.
+                    </video>
+                    <p class='video-caption'>The AI robot painting a series of patterns using LED lights.</p>
+                  </div>
+                </div>
+                
+                <hr class='section-list-line'>
+                
+                <!-- Image Gallery Section -->
+                <div class='list-section'>
+                  <div class='list-description'>
+                    <h2>Image Gallery</h2>
+                    <p>Here are some of the amazing light paintings created by the robot:</p>
+                    <!-- Start of Carousel -->
+                    <div id="projectCarousel" class="carousel slide" data-ride="carousel" data-interval="3000"> <!-- Automatically switches every 3 seconds -->
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                        <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#projectCarousel" data-slide-to="1"></li>
+                        <li data-target="#projectCarousel" data-slide-to="2"></li>
+                        <li data-target="#projectCarousel" data-slide-to="3"></li>
+                        <li data-target="#projectCarousel" data-slide-to="4"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="image-container">
+                            <img class="img-responsive" src="../../carousel_images/light_painting/light_paint_1.png" alt="AI Light Painting 1">
+                            <img class="img-responsive" src="../../carousel_images/light_painting/light_paint_2.png" alt="AI Light Painting 2">
+                            <img class="img-responsive" src="../../carousel_images/light_painting/light_paint_3.png" alt="AI Light Painting 3">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                            <img class="img-responsive" src="../../carousel_images/light_painting/light_paint_4.png" alt="AI Light Painting 4">
+                            <img class="img-responsive" src="carousel_images/flute/flute_1.jpeg" alt="Flute 1">
+                            <img class="img-responsive" src="carousel_images/legs/legs_1.jpeg" alt="Legs 1">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                            <img class="img-responsive" src="carousel_images/legs/legs_2.jpeg" alt="Legs 2">
+                            <img class="img-responsive" src="path-to-image8.jpg" alt="Project 8">
+                            <img class="img-responsive" src="path-to-image9.jpg" alt="Project 9">
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#projectCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#projectCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- End of Carousel -->
+                  </div>
+                </div>
+                
+                <hr class='section-list-line'>
+                
+                <div class='list-section'>
+                  <div class='list-description'>
+                    <h2>Technical Details</h2>
+                    <p>This project utilizes AI algorithms to control a robotic arm with an attached LED light source. By adjusting the speed, position, and light intensity, the robot creates patterns similar to long-exposure photography. The AI system optimizes the movements to ensure smooth transitions between patterns.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <script>
+      // Load the navbar dynamically into the div with id="navbar"
+      $(function(){
+        $("#navbar").load("../../navbar.html");
+      });
+    </script>
+  </body>
+</html>
