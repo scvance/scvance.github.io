@@ -13,12 +13,9 @@
     
   </head>
   <body>
-    
     <div id="navbar"></div>
-    
-    <div class = 'title-section'>
-      <!-- <h3>hey, my name is</h3>  -->
-      <h1 class = 'main-title'>Sam Vance</h1>
+    <div class='title-section'>
+      <h1 class='main-title'>Sam Vance</h1>
     
       <div class='navigation-bar'>
         <a class='button' href='https://github.com/scvance'>GITHUB</a>
@@ -27,8 +24,60 @@
     </div>
     
     <hr class='title-line'>
-    
+
     <div class='page-body'>
+
+    <!-- Start of Carousel -->
+    <div id="projectCarousel" class="carousel slide" data-ride="carousel" data-interval="3000"> <!-- Automatically switches every 3 seconds -->
+
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#projectCarousel" data-slide-to="1"></li>
+        <li data-target="#projectCarousel" data-slide-to="2"></li>
+        <li data-target="#projectCarousel" data-slide-to="3"></li>
+        <li data-target="#projectCarousel" data-slide-to="4"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="image-container">
+            <img class="img-responsive" src="carousel_images/light_painting/light_paint_1.png" alt="AI Light Painting 1">
+            <img class="img-responsive" src="carousel_images/light_painting/light_paint_2.png" alt="AI Light Painting 2">
+            <img class="img-responsive" src="carousel_images/light_painting/light_paint_3.png" alt="AI Light Painting 3">
+          </div>
+        </div>
+        <div class="item">
+          <div class="image-container">
+            <img class="img-responsive" src="carousel_images/light_painting/light_paint_4.png" alt="AI Light Painting 4">
+            <img class="img-responsive" src="carousel_images/flute/flute_1.jpeg" alt="Flute 1">
+            <img class="img-responsive" src="carousel_images/legs/legs_1.jpeg" alt="Legs 1">
+          </div>
+        </div>
+        <div class="item">
+          <div class="image-container">
+            <img class="img-responsive" src="carousel_images/legs/legs_2.jpeg" alt="Legs 2">
+            <img class="img-responsive" src="path-to-image8.jpg" alt="Project 8">
+            <img class="img-responsive" src="path-to-image9.jpg" alt="Project 9">
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#projectCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#projectCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- End of Carousel -->
+
+
+      <!-- ABOUT Section -->
       <section id='interests' class='section-with-list'>
         <div class='section-list-description'>
           <h2>ABOUT</h2>
@@ -42,6 +91,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-    
+
+        <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
   </body>
 </html>
