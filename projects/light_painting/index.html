@@ -18,8 +18,18 @@
         <div id='ai-light-painting' class='project-section'>
               <div class='section-with-list'>
                 <div class='section-list-description'>
-                  <h2>PROJECT OVERVIEW</h2>
-                  <p>This project involves an AI-powered robot that creates stunning light paintings by moving a light source in a controlled pattern. The robot's movements are pre-programmed using AI algorithms to produce intricate and artistic light patterns.</p>
+                    <h2>PROJECT OVERVIEW</h2>
+                    <!-- Introduction -->
+                    <p>
+                        Ever since I learned about light painting I have always thought that the concept was super cool.
+                        <!-- Inspiration -->
+                        After watching some videos of professional light painters on Instagram, I thought that although I didn't know how to light paint very well, I could probably build a robot to paint for me.
+                        <!-- Project Timeline -->
+                        Shown below is the result of several evenings and weekends spread across roughly 3 months.
+                        <!-- Future Plans -->
+                        I will probably revisit this project in the future, as it is one of my favorite things I have ever built.
+                    </p>
+  
                 </div>
                 
                 <hr class='section-list-line'>
@@ -29,11 +39,60 @@
                   <div class='list-description'>
                     <h2>Project Videos</h2>
                     <p>Watch the AI light painting robot in action:</p>
-                    <video class='list-video' controls>
-                      <source src='videos/ai_light_painting.mp4' type='video/mp4'>
-                      Your browser does not support the video tag.
-                    </video>
-                    <p class='video-caption'>The AI robot painting a series of patterns using LED lights.</p>
+                    <!-- Start of Carousel -->
+                    <div id="videoCarousel" class="carousel slide" data-ride="carousel" data-interval="10000"> <!-- Automatically switches every 3 seconds -->
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                        <li data-target="#videoCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#videCarousel" data-slide-to="1"></li>
+                        <li data-target="#videCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                                    <source src='../../carousel_images/light_painting/light_painting.mp4' type='video/mp4'>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                                    <source src='../../carousel_images/light_painting/fingerpainting.mp4' type='video/mp4'>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                                    <source src='../../carousel_images/light_painting/light_paintings.mp4' type='video/mp4'>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#videoCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#videoCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- End of Carousel -->
+                    <!-- <div class='video-container'>
+                        <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                            <source src='../../carousel_images/light_painting/light_paintings.mp4' type='video/mp4'>
+                            Your browser does not support the video tag.
+                        </video>
+                        <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                            <source src='../../carousel_images/light_painting/light_painting.mp4' type='video/mp4'>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p class='video-caption'>The AI robot painting a series of patterns using LED lights.</p> -->
                   </div>
                 </div>
                 
@@ -43,7 +102,7 @@
                 <div class='list-section'>
                   <div class='list-description'>
                     <h2>Image Gallery</h2>
-                    <p>Here are some of the amazing light paintings created by the robot:</p>
+                    <p>Here are some pictures of the project:</p>
                     <!-- Start of Carousel -->
                     <div id="projectCarousel" class="carousel slide" data-ride="carousel" data-interval="3000"> <!-- Automatically switches every 3 seconds -->
 
@@ -68,15 +127,22 @@
                         <div class="item">
                             <div class="image-container">
                             <img class="img-responsive" src="../../carousel_images/light_painting/light_paint_4.png" alt="AI Light Painting 4">
-                            <img class="img-responsive" src="carousel_images/flute/flute_1.jpeg" alt="Flute 1">
-                            <img class="img-responsive" src="carousel_images/legs/legs_1.jpeg" alt="Legs 1">
+                            <img class="img-responsive" src="../../carousel_images/light_painting/light_paint_5.png" alt="AI Light Painting 5">
+                            <img class="img-responsive" src="../../carousel_images/light_painting/light_paint_6.png" alt="AI Light Painting 6">
                             </div>
                         </div>
                         <div class="item">
                             <div class="image-container">
-                            <img class="img-responsive" src="carousel_images/legs/legs_2.jpeg" alt="Legs 2">
-                            <img class="img-responsive" src="path-to-image8.jpg" alt="Project 8">
-                            <img class="img-responsive" src="path-to-image9.jpg" alt="Project 9">
+                            <img class="img-responsive" src="../../carousel_images/light_painting/light_paint_7.png" alt="AI Light Painting 7">
+                            <img class="img-responsive" src="../../carousel_images/light_painting/light_paint_8.png" alt="AI Light Painting 8">
+                            <img class="img-responsive" src="../../carousel_images/light_painting/light_paint_9.png" alt="AI Light Painting 9">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                            <img class="img-responsive" src="../../carousel_images/light_painting/light_paint_10.png" alt="AI Light Painting 10">
+                            <img class="img-responsive" src="../../carousel_images/light_painting/light_paint_11.png" alt="AI Light Painting 11">
+                            <img class="img-responsive" src="../../carousel_images/light_painting/light_paint_5.png" alt="AI Light Painting 5">
                             </div>
                         </div>
                         </div>
@@ -100,7 +166,10 @@
                 <div class='list-section'>
                   <div class='list-description'>
                     <h2>Technical Details</h2>
-                    <p>This project utilizes AI algorithms to control a robotic arm with an attached LED light source. By adjusting the speed, position, and light intensity, the robot creates patterns similar to long-exposure photography. The AI system optimizes the movements to ensure smooth transitions between patterns.</p>
+                    <p>Utilizing the mediapipe hands model, I developed a fingerpainting app. The user's left hand selects colors/picks up the pencil, while the right hand paints the picture.</p>
+                    <p>An array of points and colors are saved, and passed to the robot. The robot is built using a Nema-17 Stepper motor with an MP6500 motor driver, an RGB LED, a custom 3D printed motor shaft adaptor, some legos, dental floss, and a custom built frame. With this frame and a Raspberry Pi 4 as a brain, the robot can perfectly recreate any fingerpainting.</p>
+                    <p>Long exposure photographs are taken using my iPhone 14 Pro. The maximum exposure time is 1 minute which is insufficient in some circumstances to create the artwork. Therefore, for photos like the dragon, I pause the robot midway, take n photos, and then superimpose them to appear as if they are one uninterrupted photograph.</p>
+                    <p>Fingerpaintings are inherently imprecise, so the stop motion videos were created with a drawing app I built, and then light painted by the robot.</p>
                   </div>
                 </div>
               </div>
