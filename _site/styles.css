@@ -233,10 +233,12 @@ html {
   margin-top: 40px;
 }
 
+/* put list-img off to the right inline with text */
 .list-img {
   width: 500px;
   height: auto;
   margin-left: 30px;
+  float: right;
 }
 
 .section-list-line {

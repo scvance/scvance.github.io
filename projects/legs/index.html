@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Humanoid Legs</title>
+    <meta charset='UTF-8'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel='stylesheet' href='../styles.css'/> -->
+    <link rel='stylesheet' href='styles.css'/>
+    <link rel="icon" type="image/png" href="/main-images/favicon.png"/>
+  </head>
+  
+  <body>
+    
+    <div id="navbar"></div>
+
+    <h1 class='main-title'>HUMANOID LEGS</h1>
+    
+    <div class='page-body'>
+        <div id='legs' class='project-section'>
+              <div class='section-with-list'>
+                <div class='section-list-description'>
+                    <h2>PROJECT OVERVIEW</h2>
+                    <!-- Introduction -->
+                    <p>
+                        At the end of summer 2023, I broke my right ankle playing pickleball. I know. Pickleball. 
+                        It was right before the first day of Fall Semester at BYU and for some reason, my classes were further apart than they had ever been. 
+                        I was on crutches for several weeks before I got a knee scooter and let me tell you, the bruises in my armpits from traversing campus were horrible. 
+                        Living on the third floor of an apartment complex with no elevator, I also had to carry stuff like groceries with my fingertips as I crutched up the stairs. 
+                        It was a nightmare. I decided that I would build a one legged exoskeleton to walk for me, but after looking at parts, 
+                        I knew I had nowhere near the budget. So I decided to build a miniature pair of legs that could walk on their own. 
+                        I am still in the process of building these legs, but I have completed 2 versions so far. 
+                        I'll talk a little more about this in the technical details section.
+                    </p>
+                </div>
+                
+                <hr class='section-list-line'>
+                
+                <!-- Video Section -->
+                <div class='list-section'>
+                  <div class='list-description'>
+                    <h2>Project Videos</h2>
+                    <p>Watch clips of the legs:</p>
+                    <!-- Start of Carousel -->
+                    <div id="videoCarousel" class="carousel slide" data-ride="carousel" data-interval="10000"> 
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                        <li data-target="#videoCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#videoCarousel" data-slide-to="1"></li>
+                        <li data-target="#videoCarousel" data-slide-to="2"></li>
+                        <li data-target="#videoCarousel" data-slide-to="3"></li>
+                        <li data-target="#videoCarousel" data-slide-to="4"></li>
+                        <li data-target="#videoCarousel" data-slide-to="5"></li>
+                        <li data-target="#videoCarousel" data-slide-to="6"></li>
+                        <li data-target="#videoCarousel" data-slide-to="7"></li>
+                        <li data-target="#videoCarousel" data-slide-to="8"></li>
+                        <li data-target="#videoCarousel" data-slide-to="8"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                                    <source src='/carousel_images/legs/walking_legs_v1.MP4' type='video/mp4'>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                                    <source src='/carousel_images/legs/assembly_v3.MP4' type='video/mp4'>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                                    <source src='/carousel_images/legs/test_motor.mp4' type='video/mp4'>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                                    <source src='/carousel_images/legs/test_all_motors.mp4' type='video/mp4'>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                                    <source src='/carousel_images/legs/circuit_board.mp4' type='video/mp4'>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                                    <source src='/carousel_images/legs/test_legs_v1.mp4' type='video/mp4'>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                                    <source src='/carousel_images/legs/inverse_kinematics.mp4' type='video/mp4'>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                                    <source src='/carousel_images/legs/moveit.mp4' type='video/mp4'>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                                    <source src='/carousel_images/legs/walking_legs_v1.MP4' type='video/mp4'>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                                    <source src='/carousel_images/legs/initial_simulation_2.mp4' type='video/mp4'>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#videoCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#videoCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- End of Carousel -->
+                  </div>
+                </div>
+                
+                <hr class='section-list-line'>
+                
+                <!-- Image Gallery Section -->
+                <div class='list-section'>
+                  <div class='list-description'>
+                    <h2>Image Gallery</h2>
+                    <p>Here are some pictures of the project:</p>
+                    <!-- Start of Carousel -->
+                    <div id="projectCarousel" class="carousel slide" data-ride="carousel" data-interval="3000"> <!-- Automatically switches every 3 seconds -->
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                        <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#projectCarousel" data-slide-to="1"></li>
+                        <li data-target="#projectCarousel" data-slide-to="2"></li>
+                        <li data-target="#projectCarousel" data-slide-to="3"></li>
+                        <li data-target="#projectCarousel" data-slide-to="4"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="image-container">
+                            <img class="img-responsive" src="/carousel_images/legs/3d_print.png" alt="Humanoid Legs 1">
+                            <img class="img-responsive" src="/carousel_images/legs/legs_1.jpeg" alt="Humanoid Legs 8">
+                            <img class="img-responsive" src="/carousel_images/legs/legs_v1_standing.png" alt="Humanoid Legs 3">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                            <img class="img-responsive" src="/carousel_images/legs/breadboard_2.jpg" alt="Humanoid Legs 4">
+                            <img class="img-responsive" src="/carousel_images/legs/cad_v1.png" alt="Humanoid Legs 5">
+                            <img class="img-responsive" src="/carousel_images/legs/circuit_board.PNG" alt="Humanoid Legs 6">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                            <img class="img-responsive" src="/carousel_images/legs/ik_v1.png" alt="Humanoid Legs 7">
+                            <img class="img-responsive" src="/carousel_images/legs/legs_v3.png" alt="Humanoid Legs 2">
+                            <img class="img-responsive" src="/carousel_images/legs/legs_2.jpeg" alt="Humanoid Legs 9">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                            <img class="img-responsive" src="/carousel_images/legs/magnified.png" alt="Humanoid Legs 10">
+                            <img class="img-responsive" src="/carousel_images/legs/one_legged.png" alt="Humanoid Legs 11">
+                            <img class="img-responsive" src="/carousel_images/legs/v1_hip_cad.png" alt="Humanoid Legs 5">
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#projectCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#projectCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- End of Carousel -->
+                  </div>
+                </div>
+                
+                <hr class='section-list-line'>
+                
+                <div class='list-section'>
+                  <div class='list-description'>
+                    <h2>Technical Details</h2>
+                    <p>The first version of these legs used 2 Lego Mindstorms NXT motors, 2 Large Lego Mindstorms EV3 Motors, and 2 Medium EV3 Motors.</p>
+                    <p>
+                        These motors have an encoder for positioning and a DC motor. The encoder and the motor require two separate power sources at different voltages which is a pain.
+                        Furthermore, the motors did not have a built in PID controller. I had to write my own software PID controller which did not work nearly as well as a hardware PID could.
+                        In order to control the motors and read the encoders, I had volatile functions connected to interrupt pins on the Arduino. This allowed me to keep track of motor positions during the main loop.
+                        The problem with this approach is two-fold. One, Arduino has a limited number of interrupt pins which meant I had to connect two arduinos together with the I2C bus.
+                        Second, Arduinos are not very fast. The motors would often overshoot their target position before the Arduino could correct it. This was especially problematic when the motors were moving quickly and simultaneously.
+                        Overall, once I started noticing the problems, I didn't put too much effort into fixing it because I knew that I could solve all of the motor control problems using different motors.
+                    </p>
+                    <p>
+                        This leads us to version 2. Version 2 uses 6 DS3218 servos. These servos are powerful and have a hardware PID. This allowed me to focus
+                        my efforts on calculating the inverse kinematics. Since version 2 fixed the legs in the XY plane, I was able to use intuition to solve the inverse 
+                        kinematics using intersecting circles. You can see the results of the inverse kinematics in a Desmos graph above. I also included a video of the controls.
+                        Unfortunately, since these legs did not have a way to move into the Z plane, they could not do much more than shuffle. Lifting the leg too high would cause 
+                        the robot to tip over. I am currently working on version 3 which adds 2 actuators to allow the robot to move in the Z plane.
+                    </p>
+                    <p>
+                        Version 3 has 5 degrees of freedom per leg, which allow the foot to perform a large range of motion and poses although not full range of motion. The additional 
+                        degrees of freedom theoretically allow the robot to balance on one leg easily to walk. The inverse kinematics are an order of magnitude more complex than version 2,
+                        and although I created a rudimentary solver using the pseudo-inverse of the Jacobian Matrix, I am currently working on a more robust solver using the moveit library.
+                        I have started a ROS2 package for this robot and created a keyboard teleop node. I am currently working on a Gazebo simulation of the robot to test the inverse kinematics. 
+                        With school and work, it may be some time before I am able to solve this problem and so I may work on some simpler projects in the meantime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <script>
+      // Load the navbar dynamically into the div with id="navbar"
+      $(function(){
+        $("#navbar").load("../../navbar.html");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Self-Playing Flute</title>
+    <meta charset='UTF-8'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel='stylesheet' href='../styles.css'/> -->
+    <link rel='stylesheet' href='styles.css'/>
+    <link rel="icon" type="image/png" href="/main-images/favicon.png"/>
+  </head>
+  
+  <body>
+    
+    <div id="navbar"></div>
+
+    <h1 class='main-title'>Self-Playing Flute</h1>
+    
+    <div class='page-body'>
+        <div id='flute' class='project-section'>
+              <div class='section-with-list'>
+                <div class='section-list-description'>
+                    <h2>PROJECT OVERVIEW</h2>
+                    <!-- Introduction -->
+                    <p>
+                        One day I was brainstorming ideas for a project that I could build. I flashed back to my elementary school days where for some reason we all learned the recorder?
+
+                        Say what you will about the recorder but I thought that music class was dope and it made me wonder if I could build a robot to play the recorder for me.
+
+                        I picked up a penny whistle (basically a recorder) for ~$10 off of Amazon and got to work. Watch the journey of building the self-playing flute below.
+                    </p>
+  
+                </div>
+                
+                <hr class='section-list-line'>
+                
+                <!-- Video Section -->
+                <div class='list-section'>
+                  <div class='list-description'>
+                    <h2>Project Videos</h2>
+                    <p>Watch the TikToks I made for the flute:</p>
+                    <!-- Start of Carousel -->
+                    <div id="videoCarousel" class="carousel slide" data-ride="carousel" data-interval="60000">
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#videoCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#videCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                              <source src='/carousel_images/flute/flute_video_1.mp4' type='video/mp4'>
+                              Your browser does not support the video tag.
+                            </video>
+                          </div>
+                          <div class="item">
+                            <video controls autoplay name="media" muted="true" style="width: 400px; height: auto;">
+                              <source src='/carousel_images/flute/flute_video_2.mp4' type='video/mp4'>
+                              Your browser does not support the video tag.
+                            </video>
+                          </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#videoCarousel" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#videoCarousel" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <hr class='section-list-line'>
+                
+                <!-- Image Gallery Section -->
+                <div class='list-section'>
+                  <div class='list-description'>
+                    <h2>Image Gallery</h2>
+                    <p>Here are some pictures of the project:</p>
+                    <!-- Start of Carousel -->
+                    <div id="projectCarousel" class="carousel slide" data-ride="carousel" data-interval="3000"> <!-- Automatically switches every 3 seconds -->
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                        <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#projectCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="image-container">
+                            <img class="img-responsive" src="/carousel_images/flute/flute_1.jpeg" alt="flute 1">
+                            <img class="img-responsive" src="/carousel_images/flute/flute_4.png" alt="flute 4">
+                            <img class="img-responsive" src="/carousel_images/flute/flute_3.png" alt="flute 3">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                              <img class="img-responsive" src="/carousel_images/flute/flute_old_connectors.png" alt="v1 connectors">
+                            <img class="img-responsive" src="/carousel_images/flute/flute_2.png" alt="flute 2">
+                            <img class="img-responsive" src="/carousel_images/flute/flute_final_connectors.png" alt="final connectors">
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#projectCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#projectCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- End of Carousel -->
+                  </div>
+                </div>
+                
+                <hr class='section-list-line'>
+                
+                <div class='list-section'>
+                  <div class='list-description'>
+                    <h2>Technical Details</h2>
+                    <p>This project uses 6 SG90 servo motors, an LCD i2c screen, an Arduino Uno, a potentiometer, some custom 3D printed parts, a custom PCB, and rubber spaghetti</p>
+                    <p>I used Arduino port manipulation commands to send simultaneous PWM pulses to the 6 motors. Each note corresponds to a particular byte in the code.</p>
+                    <p>The code in question is object oriented and uses 2 different classes. A note class which holds a particular byte and port manipulation command, and a song class which holds an array of notes and has functions like "play_song".</p>
+                    <p>Songs are hard coded for now, which the user can select by cranking the potentiometer and pressing a button on the circuit board.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <script>
+      // Load the navbar dynamically into the div with id="navbar"
+      $(function(){
+        $("#navbar").load("/navbar.html");
+      });
+    </script>
+  </body>
+</html>
